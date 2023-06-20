@@ -1,0 +1,66 @@
+services:
+    '@enhavo/form/Loader/CheckboxLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/ActionLoader':
+        chunk: 'form'
+        arguments:
+            - '@enhavo/app/Action/ActionRegistry'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/SelectLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/DateTimeLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/DateLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/WysiwygLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/ListLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/AutoCompleteLoader':
+        chunk: 'form'
+        arguments:
+            - '@enhavo/app/ViewStack/EventDispatcher'
+            - '@enhavo/app/View/View'
+            - '@enhavo/core/Router'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/WeekendDateLoader':
+        chunk: 'form'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/PolyCollectionLoader':
+        chunk: 'form'
+        arguments:
+            - '@enhavo/app/View/View'
+            - '@enhavo/core/Translator'
+            - '@enhavo/app/ViewStack/EventDispatcher'
+        tags:
+            - 'enhavo_app.form'
+
+    '@enhavo/form/Loader/ConditionLoader':
+        chunk: 'form'
+        arguments:
+        tags:
+            - 'enhavo_app.form'

@@ -1,0 +1,49 @@
+.form-row {
+    .autocomplete-create-button {display:inline-block;@extend %btn-secondary;text-decoration: none;
+        &:after {font-family:"enhavo-icons";content:"\f10d";position:absolute;top:5px; right:10px; font-weight:$fontRegular;}
+    }
+
+    .autocomplete-action-button {display:inline-block;@extend %btn-secondary;text-decoration: none;
+        i { position:absolute;top:5px; right:10px; font-weight:$fontRegular; }
+    }
+
+    .btn-secondary {@extend %btn-secondary;}
+
+    .related-buttons-row {margin:2px -3px -3px -3px;
+        .btn-secondary {margin:3px;}
+    }
+
+    .entity-tree-children {padding-left:30px;position:relative;
+        &:before {content:"";position:absolute;top: 6px;left: 10px;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;width: 8px;height: 8px;}
+        .entity-tree-children {
+            &:after {content:"";position:absolute;top: 13px;left: 18px;width: 1px;background:linear-gradient(to bottom, #ccc, transparent);height: calc(100% - 13px);}
+        }
+    }
+
+    .choice-row {
+        + .choice-row {margin-top:3px;}
+    }
+
+    .choice-input-container {padding-top:3px;
+        .choice-input-with-label {display: inline-block;white-space:nowrap;margin-right:20px;}
+    }
+
+    .html-tag-widget { position:relative;
+        .flex-container {display:flex;width:100%;
+            .html-tag-widget-choice {margin-left:2px;width:120px;flex:0 0 auto;}
+            .html-tag-widget-text {flex:1 0 auto;}
+        }
+    }
+
+    .label-help-container {font-size:0.85rem;line-height:1.1em;margin-bottom:1px;
+        .label {display:inline-block; margin-bottom:2px;
+            + .help-container {margin-left:5px;}
+        }
+        .help-container {display:inline-block;position:relative;cursor:pointer;top:-1px;padding-right:2px;
+            &:hover {
+                .help-text {display:block;}
+            }
+            .help-text {position:absolute;top:-3px;left:calc(100% + 1px);min-width:260px;padding:6px;box-shadow:1px 1px 3px rgba(#000,0.16);border-radius:3px;background:rgba(#fff,0.95);display:none;z-index:2;line-height:1.25em;}
+        }
+    }
+}
